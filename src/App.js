@@ -6,7 +6,7 @@ import Questions from './Questions/Questions';
 function App() {
   return (
     <>
-      <div className="content center">
+      <div className="content">
         <div className="box center">
           <div className="left">
             <h2 className="title">Questions And Answers About Login</h2>
