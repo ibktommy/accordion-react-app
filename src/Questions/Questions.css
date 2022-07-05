@@ -2,6 +2,11 @@
   box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.4);
   padding: .5rem 1rem 1rem 1rem;
   border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
 }
 
 .card.center {

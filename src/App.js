@@ -1,4 +1,6 @@
 import './App.css';
+import data from './data'
+
 import Questions from './Questions/Questions';
 
 function App() {
@@ -10,7 +12,11 @@ function App() {
             <h2 className="title">Questions And Answers About Login</h2>
           </div>
           <div className="right">
-            <Questions />
+            {
+              data.map(({ id, ...props }) => {
+                return <Questions key={id} {...props} />
+              })
+            }
           </div>
         </div>
       </div>
