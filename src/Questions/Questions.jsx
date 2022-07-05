@@ -17,15 +17,17 @@ const Questions = () => {
 						Do i have to allow the use of cookies?
 					</h2>
 					<i
-						className={show ? "fa-solid fa-minus" : "fa-solid fa-plus"}
+						className={show ? "fa-solid fa-plus" : "fa-solid fa-minus"}
 						onClick={open}
 					></i>
 				</div>
 
-				<div className="answer">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-					molestias obcaecati dolores nam in error!
-				</div>
+				{show ? null : (
+					<div className="answer">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+						molestias obcaecati dolores nam in error!
+					</div>
+				)}
 			</div>
 		</>
 	);
