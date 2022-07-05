@@ -14,12 +14,12 @@ const Questions = ({ title, info }) => {
 				<div className="card-question center">
 					<h2 className="question-title">{title}</h2>
 					<i
-						className={show ? "fa-solid fa-plus" : "fa-solid fa-minus"}
+						className={show ? "fa-solid fa-minus" : "fa-solid fa-plus"}
 						onClick={open}
 					></i>
 				</div>
 
-				{show ? null : <div className="answer">{info}</div>}
+				{show ? <div className="answer">{info}</div> : null}
 			</div>
 		</>
 	);
